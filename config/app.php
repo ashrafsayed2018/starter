@@ -175,6 +175,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // add the socialite class to login with social media
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
+
     ],
 
     /*
@@ -225,6 +229,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        // add the socialite class aliase to login with social media 
+
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 
